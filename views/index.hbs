@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-light">
+      <span class="navbar-nav">
+        <span class="nav-item">
+          <a class="nav-link" href="/">Weather</a>
+        </span>
+        <span class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </span>
+        <span class="nav-item">
+          <a class="nav-link" href="/help">Help</a>
+        </span>
+      </span>
+    </nav>
+    <h1 class="align-header">Weather Analyser</h1>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Place</th>
+          <th scope="col">{{regionOne.place}}</th>
+          <th scope="col">{{regionTwo.place}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Temperature</th>
+          <td>{{regionOne.temperature}}°C</td>
+          <td>{{regionTwo.temperature}}°C</td>
+        </tr>
+        <tr>
+          <th scope="row">Pressure</th>
+          <td>{{regionOne.pressure}}</td>
+          <td>{{regionTwo.pressure}}</td>
+        </tr>
+        <tr>
+          <th scope="row">WindSpeed</th>
+          <td>{{regionOne.windSpeed}}</td>
+          <td>{{regionTwo.windSpeed}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Humidity</th>
+          <td>{{regionOne.humidity}}</td>
+          <td>{{regionTwo.humidity}}</td>
+        </tr>
+        <tr>
+          <th scope="row">DewPoint</th>
+          <td>{{regionOne.dewPoint}}</td>
+          <td>{{regionTwo.dewPoint}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Summary</th>
+          <td>{{regionOne.summary}}</td>
+          <td>{{regionTwo.summary}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

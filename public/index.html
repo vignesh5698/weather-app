@@ -18,18 +18,20 @@
         </span>
       </span>
     </nav>
-    <div class="align">
-      <h1>Compare Weather</h1>
+    <div>
+      <h1 class="align-header">Weather Analyser</h1>
       <form action="/get_weather" method="POST">
         <div class="form-group">
-          <label>Enter district / region name - 1 :</label>
-          <input type="text" class="form-control" id="area-1" name="regionOne">
+          <label class="align-label">Region one</label>
+          <input type="text" class="form-control" id="area-1" name="regionOne"  placeholder="Enter region one name" required>
         </div>
         <div class="form-group">
-          <label>Enter district / region name - 2 :</label>
-          <input type="text" class="form-control" id="area-2" name="regionTwo">
+          <label class="align-label">Region two</label>
+          <input type="text" class="form-control" id="area-2" name="regionTwo"  placeholder="Enter region two name" required>
         </div>
-        <button type="submit" class="btn btn-primary">Go</button>
+        <div class="align">
+          <button type="submit" class="btn btn-primary">Go</button>
+        </div>
       </form>
   </body>
 </html>
